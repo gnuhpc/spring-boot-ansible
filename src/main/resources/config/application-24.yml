@@ -1,0 +1,24 @@
+
+server:
+    port: 8778
+    tomcat:
+      basedir: /home/adminapp/springboot-tomcat-tmp
+
+
+ansibleRestful:
+    #服务器地址及用户
+    serverAddress: 199.0.129.24
+    serverUser: root
+
+    #私钥文件地址
+    id_rsa: /root/.ssh/id_rsa.new
+
+    #jsch连接超时时间(分发文件)
+    jschTimeout: 120000
+
+    #执行任务yml文件地址
+    scriptTemplateRemote: /home/adminapp/micro-service/ansible/scriptTemplate/scriptTemplateRemote.yml
+
+    #文件临时存放地址
+    temporaryFile: /home/adminapp/temporary_file
+
